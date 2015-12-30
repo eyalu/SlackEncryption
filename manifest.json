@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Slack encryption",
+  "description": "Slack encryption by Easy as Pie - support@easyaspie.tech",
+  "version": "1.0",
+
+  "content_scripts": [ {
+      "all_frames" : false,
+      "js": [ "js/jquery.js", "js/aes.js", "js/app.js" ],
+      "matches": [ "https://*/*", "http://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "page_action": {
+    "default_icon": {
+      "38": "key_icon.png"
+    },
+    "default_title": "Slack Encryptor",  // shown in tooltip
+    "default_popup": "popup.html"        // optional
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*"    
+  ],
+  "web_accessible_resources": []
+}

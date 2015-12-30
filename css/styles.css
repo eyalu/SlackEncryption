@@ -1,0 +1,36 @@
+/* styles.css */
+
+body {
+	width: 350px;
+	height: 70px;
+}
+
+.encryption-key-form {
+	margin-top:20px;
+}
+
+.encryption-key-form .form-group {
+	float:left;
+}
+
+input.key {
+	width:270px;
+}
+
+.saveBtn {
+	float:left;
+	margin-left:10px;
+	margin-top:2px;
+}
+
+label {
+	padding-left:8px!important;
+}
+
+#encryptMessagesCheckbox {
+	margin-left:10px!important;
+}
+
+.encryptMessagesContainer {
+	margin-bottom:10px;
+}
